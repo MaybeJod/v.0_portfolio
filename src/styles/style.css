@@ -1,28 +1,26 @@
-h1 {
-    font-size: 3rem;
-    text-wrap: nowrap;
-}
 
 .marquee-wrapper {
     max-width: 100%;
     overflow: hidden;
+    position: relative;
     .marquee {
         white-space: nowrap;
         overflow: hidden;
         display: inline-block;
-        animation: marquee 10s linear infinite;
-        h1 {
+        animation: marquee 8s linear infinite;
+        span {
             display: inline-block;
-            text-wrap: nowrap;
+            font-size: 3rem;
+            padding-right: 2rem;
         }
     }
 }
 
 @keyframes marquee {
     0% {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
     }
     100% {
-        transform: translate3d(-50%, 0, 0);
+        transform: translateX(-100%);
     }
 }
