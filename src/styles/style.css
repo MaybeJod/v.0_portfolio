@@ -1,3 +1,7 @@
+* {
+   /*  border: 1px solid green; */
+}
+
 .page-container {
     width: 90dvw;
 }
@@ -11,6 +15,7 @@ header {
     display: flex;
     justify-content: center;
     .page-container {
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         p {
@@ -53,71 +58,125 @@ nav {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     #hero {
         min-height: 100svh;
-        h1 {
-            font-size: 12dvw;
-            text-align: center;
-        }
-        .hero-text-and-img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            h2 {
-                font-size: 3dvw;
+        .page-container {
+            h1 {
+                font-size: 12dvw;
+                text-align: center;
             }
-            #heroImg {
-                width: 20dvw;   
-                height: auto;
+            .hero-text-and-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                h2 {
+                    font-size: 3dvw;
+                }
+                #heroImg {
+                    width: 20dvw;   
+                    height: auto;
+                }
             }
         }
     }
     #projects {
         min-height: 100svh;
-        .projects-heading {
-            font-size: 3rem;
+        .page-container {
+            .projects-heading {
+                font-size: 3rem;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                .card {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                    }
+                    :hover img {
+                        border-radius: 50%;
+                        transition-duration: 0.4s;
+                    }
+                    .project-number {
+                        color: #8c8c8c;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transition-duration: 0.4s;
+                    }
+                    hr {
+                        border: 0.5px solid #000000;
+                    }
+                    .project-tags {
+                        text-transform: uppercase;
+                        font-size: .8rem;
+                    }
+                    .project-title {
+                        text-transform: uppercase;
+                        font-size: 2rem ;
+                        margin: 0;
+                    }
+                }
+            }
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            .card {
-                cursor: pointer;
+    }
+    #about {
+        min-height: 100svh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 97dvw;
+        border-radius: 1%;
+        .page-container {
+            color: #ffffff;
+            .about-heading {
+                font-size: 6rem;
+                .demure {
+                    background-image: linear-gradient(45deg, #ffb3ba, #c49c6e, #bfbf76, #77b084, #ff7e74, #3b82f6, #c084fc, #db2777);
+                    color: transparent;
+                    -webkit-background-clip: text; /* Edge, Chrome */
+                    background-clip: text; /* Safari, FF */
+                    animation: gradientAnimation 8s linear infinite;
+                    animation-direction: alternate;
+                    background-size: 300% 100%;
+                }
+                @keyframes gradientAnimation {
+                    0% {
+                        background-position: 0;
+                    }
+                    100% {
+                        background-position: 100%;
+                    }
+                }
+            }
+            .about-card {
                 display: flex;
-                flex-direction: column;
-                height: 100%;
-                a {
-                    text-decoration: none;
-                    color: #000000;
+                justify-content: space-between;
+                align-items: start;
+                gap: 3rem;
+                .about-text {
+                    p {
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                    }
                 }
-                :hover img {
-                    border-radius: 50%;
-                    transition-duration: 0.4s;
-                }
-
-                .project-number {
-                    color: #8c8c8c;
-                }
-                img {
-                    width: 100%;
+                .about-img {
+                    width: 30%;
                     height: auto;
-                    transition-duration: 0.4s;
-                }
-                hr {
-                    border: 0.5px solid #000000;
-                }
-                .project-tags {
-                    text-transform: uppercase;
-                    font-size: .8rem;
-                }
-                .project-title {
-                    text-transform: uppercase;
-                    font-size: 2rem ;
-                    margin: 0;
+                    border-radius: 50%;
                 }
             }
         }
