@@ -2,6 +2,11 @@
     width: 90dvw;
 }
 
+img {
+    width: 300px;
+    height: 300px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -59,12 +64,61 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 2rem;
             h2 {
                 font-size: 3dvw;
             }
             #heroImg {
                 width: 20dvw;   
                 height: auto;
+            }
+        }
+    }
+    #projects {
+        min-height: 100svh;
+        .projects-heading {
+            font-size: 3rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            .card {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+                :hover img {
+                    border-radius: 50%;
+                    transition-duration: 0.4s;
+                }
+
+                .project-number {
+                    color: #8c8c8c;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    transition-duration: 0.4s;
+                }
+                hr {
+                    border: 0.5px solid #000000;
+                }
+                .project-tags {
+                    text-transform: uppercase;
+                    font-size: .8rem;
+                }
+                .project-title {
+                    text-transform: uppercase;
+                    font-size: 2rem ;
+                    margin: 0;
+                }
             }
         }
     }
