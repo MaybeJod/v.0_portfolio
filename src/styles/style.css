@@ -46,6 +46,29 @@ nav {
     }
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    #hero {
+        min-height: 100svh;
+        h1 {
+            font-size: 12dvw;
+            text-align: center;
+        }
+        .hero-text-and-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 3dvw;
+            }
+            #heroImg {
+                width: 20dvw;   
+                height: auto;
+            }
+        }
+    }
+}
 
 
 
