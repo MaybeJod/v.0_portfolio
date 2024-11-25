@@ -186,6 +186,90 @@ main {
             }
         }
     }
+    #testimonial {
+        min-height: 100svh;
+        margin-top: 3rem;
+        .page-container {
+
+            .testimonial-start {
+                min-height: 40svh;
+                h1 {
+                    font-size: 6rem;
+                    text-transform: uppercase;
+                }
+                #testimonialHeading{
+
+                    min-width: 100%;
+                    display: flex;
+                    justify-content: right;
+                    gap: 4rem;
+                    #testimonial-left {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                    }
+                    #testimonial-right {
+                        font-size: 1.5rem;
+                        width: 40%;
+                        margin-right: 6rem;
+                    }
+                }
+            }
+            
+            .slideshow-container {
+
+                .slides {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    min-height: 90svh;
+                    justify-content: space-between;
+                    .slideshow-left {
+                        display: flex;
+                        flex-direction: column;
+                        .slide-header {
+                            min-height: 90%;
+                            h2 {
+    
+                            }
+                            .client-name {
+    
+                            }
+                            .client-company {
+    
+                            }
+                            .project-tag {
+    
+                                span {
+    
+                                }
+                            }
+                        }
+                        .slide-controller {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            
+                            .slide-number {
+            
+            
+                            }
+                            .slide-button-container {
+            
+                                .slide-buttons {
+            
+            
+                                }
+                            }
+                        }
+                    }
+                    .slide-img {
+                        min-width: 50dvw;
+                        height: auto; 
+                    }
+                }
+            }
+        }
+    }
     #contact {
         min-height: 100svh;
         width: 97dvw;
