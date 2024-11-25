@@ -218,7 +218,8 @@ main {
             .slideshow-container {
 
                 .slides {
-                    display: grid;
+                    display: none;
+                    /* display: grid; */
                     grid-template-columns: 1fr 1fr;
 
                     min-height: 90svh;
@@ -251,13 +252,14 @@ main {
                             
                             .slide-number {
             
-            
                             }
                             .slide-button-container {
             
                                 .slide-buttons {
-            
-            
+                                    font-size: 2rem;
+                                    border-radius: 5rem;
+                                    padding: 1rem;
+                                    width: 8rem;
                                 }
                             }
                         }
@@ -266,6 +268,9 @@ main {
                         min-width: 50dvw;
                         height: auto; 
                     }
+                }
+                .slides:first-child {
+                    display: grid;
                 }
             }
         }

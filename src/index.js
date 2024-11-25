@@ -1,18 +1,21 @@
-import "./styles/reset.css";
-import "./styles/style.css";
-import tempJod from "./assets/img/temp_jod.jpg"
-import favIcon from "./assets/favicon/jod_favicon_6464.jpg"
+/* styles */
+import "./assets/styles/reset.css";
+import "./assets/styles/style.css";
+/* imgs */
+import tempJod from "./assets/img/temp_jod.jpg";
+import favIcon from "./assets/favicon/jod_favicon_6464.jpg";
+/* js */
+import updateTime from "./assets/components/read-timer";
+import Slideshow from "./assets/components/slideshow";
 
-function getCurrentTime() {
-	const date = new Date();
-	const localeString = date.toLocaleTimeString();
-	return localeString;
-}
+const nextBtn = document.querySelector(".nextBtn");
+const prevBtn = document.querySelector(".prevBtn");
 
-function updateTime() {
-	const currentTimeDisplay = document.querySelector("#currentTime");
-	currentTimeDisplay.innerText = getCurrentTime();
-	return currentTimeDisplay;
-}
+const slideshow = Slideshow();
 
+nextBtn.addEventListener("click", () => slideshow.plusSlides(1));
+prevBtn.addEventListener("click", () => slideshow.plusSlides(-1));
+
+
+/* run update time */
 setInterval(updateTime, 1000);
