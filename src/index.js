@@ -7,6 +7,8 @@ import favIcon from "./assets/favicon/jod_favicon_6464.jpg";
 /* -----js----- */
 /* header section */
 import renderHeader from "./assets/components/header";
+/* nav section */
+import renderNav from "./assets/components/nav";
 /* projects section */
 import renderProjects from "./assets/components/projects";
 /* testimonials slideshow */
@@ -14,6 +16,7 @@ import updateTime from "./assets/components/read-timer";
 import Slideshow from "./assets/components/slideshow";
 
 renderHeader();
+renderNav();
 renderProjects();
 
 
