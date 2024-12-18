@@ -1,4 +1,7 @@
 # V0
 
 ### hopefully first version
-[ ] - bug: slideshow only work once :(
+
+[ ] - add footer
+[ ] - fix testimonial
+[ ] - make site responsive
