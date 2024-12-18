@@ -20,8 +20,8 @@ export default function renderNav() {
 		aElement.href = navLink.link;
 		aElement.innerText = navLink.title;
 
-		const navContent = liElement.appendChild(aElement);
+		liElement.appendChild(aElement);
 
-		ulElement.appendChild(navContent);
+		ulElement.appendChild(liElement);
 	});
 }
