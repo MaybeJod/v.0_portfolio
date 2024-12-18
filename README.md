@@ -2,6 +2,6 @@
 
 ### hopefully first version
 
-[ ] - add footer
+[ ] - style footer
 [ ] - fix testimonial
 [ ] - make site responsive
