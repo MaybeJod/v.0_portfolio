@@ -62,9 +62,9 @@ export default function renderSlideShow() {
                     </div>
                 </div>
                 <div class="slide-controller">
-                    <p class="slide-number">${index + 1} / ${
+                    <p class="slide-number">[${index + 1} / ${
 			testimonials.length
-		}</p>
+		}]</p>
                     <div class="slide-button-container">
                         <button class="slide-buttons prevBtn">prev</button>
                         <button class="slide-buttons nextBtn">next</button>

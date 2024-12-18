@@ -46,7 +46,7 @@ export default function renderProjects() {
 		card.innerHTML = `
             <a href="${project.link}">
                 <span class="project-number">00-${index + 1}</span>
-                <img src="${project.image}">
+                <img src="${project.image}" alt="project image">
                 <hr>
                 <p class="project-tags">${project.tag.join(" - ")}</p>
                 <h1 class="project-title">${project.title}</h1>
