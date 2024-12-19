@@ -12,9 +12,11 @@ import renderNav from "./assets/components/nav";
 /* projects section */
 import renderProjects from "./assets/components/projects";
 /* testimonials slideshow */
-import updateTime from "./assets/components/read-timer";
-
 import renderSlideShow from "./assets/components/slideshow";
+/* timer for read message */
+import updateTime from "./assets/components/read-timer";
+/* timer for stockholm */
+import updateSthlmTime from "./assets/components/sthlm-time";
 
 document.addEventListener("DOMContentLoaded", () => {
 	renderHeader();
@@ -24,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	/* run update time */
 	setInterval(updateTime, 1000);
+	setInterval(updateSthlmTime, 1000);
 });
