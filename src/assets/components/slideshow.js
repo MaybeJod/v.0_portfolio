@@ -29,7 +29,7 @@ export default function renderSlideShow() {
 	// Testimonial Header Section
 	container.innerHTML = `
         <div class="testimonial-start">
-            <h1>don't take my word for it</h1>
+            <h2>don't take my word for it</h2>
             <div id="testimonialHeading">
                 <p id="testimonial-left">(testimonials)</p>
                 <p id="testimonial-right">Here's what my clients say about our collaboration. Their satisfaction and meeting expectations are my top priorities, ensuring the best experience possible.</p>
@@ -52,13 +52,13 @@ export default function renderSlideShow() {
 		slide.innerHTML = `
             <div class="slideshow-left">
                 <div class="slide-header">
-                    <h2>"${testimonial.statement}"</h2>
+                    <h3>"${testimonial.statement}"</h3>
                     <p class="client-name">${testimonial.clientName}</p>
                     <p class="client-company">${testimonial.clientCompany}</p>
                     <div class="project-tag">
                         ${testimonial.projectTag
 													.map((tag) => `<span>${tag}</span>`)
-													.join("")}
+													.join(" - ")}
                     </div>
                 </div>
                 <div class="slide-controller">

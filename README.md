@@ -4,9 +4,9 @@
 
 ### hopefully first version
 
-- [ ] style footer
-- [ ] style testimonial
-- [ ] style projects
+- [x] style footer
+- [x] style testimonial
+- [x] style projects
 - [ ] make site responsive
 - [ ] make about in js?
 - [ ] make contact in js?

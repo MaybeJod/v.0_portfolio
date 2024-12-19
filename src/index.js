@@ -12,8 +12,8 @@ import renderNav from "./assets/components/nav";
 /* projects section */
 import renderProjects from "./assets/components/projects";
 /* testimonials slideshow */
-/* import updateTime from "./assets/components/read-timer";
-import Slideshow from "./assets/components/slideshow"; */
+import updateTime from "./assets/components/read-timer";
+
 import renderSlideShow from "./assets/components/slideshow";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,15 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	renderNav();
 	renderProjects();
 	renderSlideShow();
+
+	/* run update time */
+	setInterval(updateTime, 1000);
 });
-
-/* const nextBtn = document.querySelector(".nextBtn");
-const prevBtn = document.querySelector(".prevBtn");
-
-const slideshow = Slideshow();
-
-nextBtn.addEventListener("click", () => slideshow.plusSlides(1));
-prevBtn.addEventListener("click", () => slideshow.plusSlides(-1));
- */
-/* run update time */
-/* setInterval(updateTime, 1000); */
